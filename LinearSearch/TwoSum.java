@@ -1,20 +1,24 @@
-public class TwoSum {
-    //https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
-    public int[] twoSum(int[] arr, int target) {
+class Solution {
 
-        int start=0;int end=arr.length-1;int[] result={1,1};
-        while(start<end){
-            if(arr[start]+arr[end]==target){
-                result[0]+=start;
-                result[1]+=end;
-                return result;
+    public int[] twoSum(int[] numbers, int target) {
+        int a_pointer = 0;
+        int b_pointer = numbers.length - 1;
+        int num_a, num_b;
+
+        while (a_pointer < b_pointer) {
+            num_a = numbers[a_pointer];
+            num_b = numbers[b_pointer];
+
+            if (num_a + num_b == target) break;
+
+            if (num_a + num_b < target) {
+                a_pointer++;
+                continue;
             }
-            if(arr[start]+arr[end]>target){
-                end--;
-            }else{
-            start++;    
-            }
+
+            b_pointer--;
         }
-        return result;
+
+        return new int[] { a_pointer + 1, b_pointer + 1 };
     }
 }
