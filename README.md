@@ -1,7 +1,7 @@
 # my_leetcode_solutions
 A Repository that will curate multiple approaches to leetcode problems 
 
-for Example 
+For Example 
 [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/)
 
 
