@@ -1,4 +1,5 @@
-  public static  int[] twoSum(int[] nums, int target) {
+class Solution {
+       public   int[] twoSum(int[] nums, int target) {
            int[] nums2=Arrays.copyOf(nums, nums.length);
            Arrays.sort(nums2);
            //find two sum as binary
@@ -19,14 +20,14 @@
           }
           else {
            for (int i = 0; i < nums.length; i++) {
-            if(b==nums[i] && a!=ans[0]){
+            if(b==nums[i] && i !=ans[0]){
                 ans[1]=i;
             }
            }
           }
            return ans;
     }
-    public static int[] binarySearch(int[] arr, int target) {
+    public  int[] binarySearch(int[] arr, int target) {
         //stat,mid,end are main points of BS Algo
         int start=0;
         int end=arr.length-1;
@@ -37,7 +38,7 @@
                 // move right 
                 start++;
             }
-            if(sum>target){
+           else if(sum>target){
                 // move left
                 end--;
             }
@@ -49,3 +50,4 @@
 
         return new int[]{0,0};
     }
+}
