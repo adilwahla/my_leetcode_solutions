@@ -1,7 +1,7 @@
 package Recursion.Lecture4Recurrsion;
 
 import java.util.Arrays;
-
+// with recurrsion
 public class BubbleSort {
      public static void main(String[] args) {
           int [] arr={3,1,5,4,2};
@@ -27,6 +27,7 @@ public class BubbleSort {
   
           
      }
+     //LINEAR METHOD 
      public static void bubbleSort1(int[] arr){
         boolean swapped; //take a flag to check swapped
         //outer loop ensures each time last element gets at right position
