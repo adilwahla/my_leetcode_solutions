@@ -1,1 +1,57 @@
 
+package OOP;
+
+public class OOP_Lecture01 {
+     public static void main(String[] args) {
+        //just declaration 
+  //  Student student1;
+  //  System.out.println(student1.rollNum);//error: (student1) must be initialized 
+    // Student[] students=new Student[5];
+    // System.out.println(Arrays.toString(students));//null
+   Student adil=new Student(400,"ADIL REHMAN",250);
+   //System.out.println(adil);  //OOP.Student@2c7b84de (default value)
+   /*
+    * WHEN VARIABLES OF CLASS ARE NOT INITIALZED & JUST DECLARED
+    PRINTING VARIABLES GIVE BY DEFAULT VALUES 
+    */
+    /*
+     *    System.out.println(adil.rollNum);//0
+          System.out.println(adil.name);//null
+          System.out.println(adil.marks);//0.0
+     */
+    //INITIALIZE VARIABLES
+    /*
+    //  adil.rollNum=61;
+    // adil.name="Adil Rehman";
+    // adil.marks=10.0f;
+   System.out.println(adil.rollNum);
+   System.out.println(adil.name);
+   System.out.println(adil.marks);
+    */ 
+
+//    System.out.println(adil.rollNum);
+//    System.out.println(adil.name);
+//    System.out.println(adil.marks);
+Student random=new Student();
+System.out.println(random.marks);
+}
+}
+
+/**
+ * Student
+ */
+ class Student {
+   int rollNum=21;
+   String name;
+  float marks;
+Student(){
+    //this how you call another constructor from one constructor
+    this(21, "Random ", 110.0f);
+}
+Student(int rollNum , String name,float marks){
+    this.rollNum=rollNum;
+    this.name=name;
+    this.marks=marks;
+}
+    
+}
