@@ -100,3 +100,6 @@ public class MergeSortRecursive {
   }
     }
 }
+//In this implementation, mergeSort is the recursive method that divides the array into halves until the size becomes 1. The merge method is responsible for merging two sorted halves of the array into a single sorted array.
+
+//The main method shows an example of how to use the mergeSort method on an array of integers. The expected output is a sorted array.
